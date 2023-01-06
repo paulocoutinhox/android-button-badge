@@ -1,6 +1,6 @@
 # Button With Badge - Android And Kotlin
 
-This project shows how to create a button with a red badge on it.
+This project shows how to create Button and TextView with a red badge on it.
 
 # Screenshot
 
