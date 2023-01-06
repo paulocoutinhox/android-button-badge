@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/firstRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -32,16 +33,66 @@
             android:text="E-books" />
 
         <FrameLayout
-            android:id="@+id/btNewsContainer"
+            android:id="@+id/btNewsContainer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btNews"
+                android:id="@+id/btNews1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="News" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Audiobooks"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="E-books"
+            android:textAlignment="center" />
+
+        <FrameLayout
+            android:id="@+id/btNewsContainer2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btNews2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="News"
+                android:textAlignment="center" />
 
         </FrameLayout>
 
